@@ -1,0 +1,94 @@
+.gallery {
+    padding: 120px 0 100px 0;
+    background: $secondary-color;
+
+    &__container {
+        margin: 0 auto;
+    }
+
+    &__header {
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+
+    &__descriprition {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px;
+    }
+
+    &__flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 1900px;
+    }
+
+    &__photoBlock {
+        position: relative;
+        width: calc((100% - 2*16px)/2);
+        max-width: 924px;
+    }
+
+    &__block {
+        position: absolute;
+        bottom: 0;
+        padding: 0 0 30px 30px;
+    }
+
+    &__img {
+        width: calc((100% - 2*24px)/2);
+        max-width: 924px;
+        img {
+            width: 210%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        margin-bottom: 8px;
+        max-width: 501px;
+    }
+
+    &__button {
+        width: 143px;
+        height: 42px;
+        background: $primary-color;
+        border-radius: 14px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        position: relative;
+        padding-left: 25px;
+        &::before {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            position: absolute;
+            top: 2px;
+            left: 3px;
+        }
+    }
+
+}

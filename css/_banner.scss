@@ -1,0 +1,82 @@
+.banner {
+    padding: 441px 0 40px 0;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+
+    &__container {
+        margin: 0 auto;
+    }
+
+    &__info {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__note {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #C0C0C0;
+        margin-bottom: 1px;
+    }
+
+    &__title {
+        font-size: 54px;
+        line-height: 59px;
+        color: $primary-color;
+        margin-bottom: 18px;
+    }
+
+    &__textMain {
+        max-width: 580px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        text-align: center;
+    }
+
+    &__icons {
+        display: flex;
+        color: $primary-color;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    &__iconsContainer {
+        display: flex;
+        align-items: flex-end;
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
+    &__imageIcons {
+        margin-right: 6px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner {
+        &__note {
+            font-size: 12px;
+        }
+    
+        &__title {
+            font-size: 34px;
+        }
+    
+        &__textMain {
+            font-size: 12px;
+        }
+    }
+}
