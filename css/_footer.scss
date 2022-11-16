@@ -1,0 +1,148 @@
+.footer {
+    background: $secondary-color;
+    padding: 100px 0;
+
+    &__container {
+        margin: 0 auto;
+    }
+
+    &__services {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 36px;
+    }
+    
+    &__subtitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $text-color;
+    }
+
+    &__service {
+        display: flex;
+        margin-right: 82px;
+    }
+
+    &__list:nth-child(1) {
+        margin-right: 54px;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $primary-color;
+        list-style: none;
+
+        &:first-child {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $text-color;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__line {
+        max-width: 1168px;
+        border: 1px solid $primary-color;
+        background: $primary-color;
+    }
+
+    &__block {
+        display: flex;
+        // justify-content: space-between;
+        padding: 36px 0;
+    }
+
+    &__subscribe {
+        width: 694px;
+        margin-right: 15px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $text-color;
+    }
+
+    &__button {
+        width: 458px;
+        height: 52px;
+        background: #F9FAFB;
+        border: 1px solid #E5E7EB;
+        border-radius: 12px;
+        // margin-right: 48px;
+    }
+
+    &__moreInfo {
+        padding: 56px 0 104px;
+        display: flex;
+    }
+
+    &__moreText {
+        width: 694px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $text-color;
+        margin-right: 361px;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer {
+        &__moreInfo {
+            justify-content: space-between;
+        }
+
+        &__moreText {
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .footer {
+        &__services {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__service {
+            margin: 0 auto 30px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.aside {
+    background: $secondary-color;
+    padding: 113px 0 108px;
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        color: $primary-color;
+        max-width: 571px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $text-color;
+        margin-bottom: 12px;
+    }
+
+    &__button {
+        width: 154px;
+        height: 42px;
+        background: $primary-color;
+        border-radius: 14px;
+        border: none;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
